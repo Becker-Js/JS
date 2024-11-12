@@ -5,12 +5,23 @@
     margin: 0;
     padding: 0;
 }
-h1,h3{ 
+h1 { 
         font-family: "Pacifico", cursive;
         font-weight: 400;
         font-style: normal;
-      }
-      
+        color: #f2e2e2;
+        text-align: center;
+    }
+h2 {
+    font-family: "Pacifico", cursive;
+        font-weight: 300;
+        font-style: normal;
+        color: #0c0c0c;
+        text-align: center;
+}
+h4 {
+    font-size: 40px;
+}
 
 body {
     grid-template-areas: "Header"
@@ -22,16 +33,11 @@ body {
     grid-template-columns:1fr ;
 
     header {
+        grid-area: header;
         font-family: cursive;
-        font-size: 1.5em;
+        font-size: 2em;
         grid-area: Header;
-        background-color: chartreuse;
-
-        h2 {
-            color: darkslategray;
-            text-align: center;
-            padding: 1rem;
-        }    
+        background-color: chartreuse;   
     }
 
     nav {
@@ -60,7 +66,38 @@ body {
     }
     main {
         grid-area: main;
-        background-image: url(https://fastly.picsum.photos/id/304/5000/3324.jpg?hmac=zUrtba_Jg3_6khk8Jo5AuycmUNZvGJeLJ_n72MHwyus);
-        
+        background-image: url(https://images.unsplash.com/photo-1705475025559-ad8efdedc74f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8M2QlMjBwcmludGVyfGVufDB8fDB8fHww);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0rem 0cqmin 1rem 1rem;
+        opacity: 0.8;
+        height: 30vh;
+    }
+    section {
+        grid-area: Productos;
+        text-align: center;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            a {
+                text-decoration: none;
+                
+                img {
+                    border-radius: 1rem 1rem 1rem 1rem;
+                }
+            }
+        }  
+    }
+    footer {
+        grid-area: footer;
+        text-align: end;
+        padding: 1rem;
+        margin-top: 50px;
+        background-color: aqua;
+
     }
 }
+
