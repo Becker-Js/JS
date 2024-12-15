@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style..css">
+
+</head>
+<body>
+    <a href="../Contacto/../../index.html">Página principal</a>
+
+    <form action="#" method="post" enctype="text/plain">
+      <fieldset>
+           <h2>Rellenar formulario completo:</h2>
+           <ul>
+                <li>
+                     <label id="Nombre" for="Nombre">Nombre:</label>
+                     <input class="input" id="Nombre" type="text"required width="300px">
+               </li>
+               <li>
+                     <label id="primer" for="primer">Primer Apellido:</label>
+                     <input class="input" id="primer" type="text"required width="300px">
+               </li>
+               <li>
+                     <label id="Segundo" for="Segundo">Segundo Apellido:</label>
+                     <input class="input" id="Segundo" type="text" required width="300px">
+               </li>
+               <li>
+                     <label id="mail" for="mail">E-mail de contacto:</label>
+                     <input class="input" id="mail" type="text" name="mail" placeholder="xxx@gmail.com" required 
+                     pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+               </li>
+               <li>
+                     <label id="Mensaje" for="Mensaje">Mensaje:<span>*describe tu consulta</span></label>
+                     <textarea class="input" id="Mensaje" name="Mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
+              </li>
+              <li>
+                    <div class="checkbox">
+                         <input id="check" type="checkbox" required >
+                         <a href="#"><span>He leido y acepto la politica de privacidad</span></a>
+                    </div>
+              </li>
+              <li>
+                    <label for="e"></label>
+                    <button style="background-color: rgb(0, 225, 255) ;" type="submit">CONTACTAR</button>
+              </li>
+              <li>
+                    <label for="Borrar"></label>
+                    <button style="background-color: rgb(24, 234, 73) ;" type="reset">Borrar</button>
+              </li>
+        </ul>
+     </fieldset>
+  </form>
+    
+</body>
+</html>
+
