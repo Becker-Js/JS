@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #f2e2e2;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Pacifico", cursive;
+    font-weight: 300;
+    font-style: normal;
+    color: #05380b;
+    text-align: center;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+h2.lema {
+    color: goldenrod;
+}
+
+section {
+    grid-area: Productos;
+    text-align: center;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+
+            img {
+                border-radius: 1rem 1rem 1rem 1rem;
+            }
+        }
+    }
+}
+
+#carrito {
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    #carrito {
+        margin-top: 20px;
+    }
+
+    #lista-carrito {
+        list-style: none;
+        padding: 0;
+    }
+
+    #lista-carrito li {
+        background-color: #f4f4f4;
+        margin: 5px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    #vaciar-carrito {
+        margin-top: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    #vaciar-carrito:hover {
+        background-color: darkred;
+    }
+
+}
